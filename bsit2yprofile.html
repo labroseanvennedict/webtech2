@@ -62,16 +62,29 @@
         }
       }
 
-      @media screen and (min-width: 401px) and (max-width: 1024px) {
+      @media screen and (min-width: 401px) and (max-width: 650px) {
         /* Tablet */
         .team-grid {
           grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-          padding: 20px 40px; /* Adjust padding for tablet screens */
+          padding: 5px 40px; /* Adjust padding for tablet screens */
         }
 
         .team-grid-head {
           grid-template-columns: repeat(1, 1fr); /* 4 columns for desktop */
-          padding: 20px 40px; /* Adjust padding for desktop screens */
+          padding: 5px 40px; /* Adjust padding for desktop screens */
+        }
+      }
+
+      @media screen and (min-width: 651px) and (max-width: 1024px) {
+        /* Tablet */
+        .team-grid {
+          grid-template-columns: repeat(3, 1fr); /* 2 columns for tablets */
+          padding: 5px 40px; /* Adjust padding for tablet screens */
+        }
+
+        .team-grid-head {
+          grid-template-columns: repeat(1, 1fr); /* 4 columns for desktop */
+          padding: 5px 40px; /* Adjust padding for desktop screens */
         }
       }
 
@@ -79,12 +92,12 @@
         /* Desktop */
         .team-grid {
           grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
-          padding: 10px 90px; /* Adjust padding for desktop screens */
+          padding: 5px 90px; /* Adjust padding for desktop screens */
         }
 
         .team-grid-head {
           grid-template-columns: repeat(1, 1fr); /* 4 columns for desktop */
-          padding: 10px 90px; /* Adjust padding for desktop screens */
+          padding: 5px 90px; /* Adjust padding for desktop screens */
         }
       }
     </style>
