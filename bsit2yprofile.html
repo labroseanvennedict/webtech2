@@ -17,7 +17,6 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
-        padding: 5px 200px;
       }
 
       .team-grid {
@@ -25,7 +24,6 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
         justify-content: center;
-        padding: 20px 200px;
       }
 
       .team-member {
@@ -57,13 +55,23 @@
           grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
           padding: 20px 20px; /* Adjust padding for mobile screens */
         }
+
+        .team-grid-head {
+          grid-template-columns: repeat(1, 1fr); /* 4 columns for desktop */
+          padding: 5px 5px; /* Adjust padding for desktop screens */
+        }
       }
 
       @media screen and (min-width: 769px) and (max-width: 1024px) {
         /* Tablet */
         .team-grid {
           grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-          padding: 20px 40px; /* Adjust padding for tablet screens */
+          padding: 20px 20px; /* Adjust padding for tablet screens */
+        }
+
+        .team-grid-head {
+          grid-template-columns: repeat(1, 1fr); /* 4 columns for desktop */
+          padding: 20px 20px; /* Adjust padding for desktop screens */
         }
       }
 
@@ -71,14 +79,19 @@
         /* Desktop */
         .team-grid {
           grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
-          padding: 20px 80px; /* Adjust padding for desktop screens */
+          padding: 20px 40px; /* Adjust padding for desktop screens */
+        }
+
+        .team-grid-head {
+          grid-template-columns: repeat(1, 1fr); /* 4 columns for desktop */
+          padding: 20px 40px; /* Adjust padding for desktop screens */
         }
       }
     </style>
   </head>
   <body>
     <div class="team-grid-head">
-      <h1>Meet my Students in Webtech 2</h1>
+      <h2>Meet my Students in Webtech 2</h2>
       <p>
         This profile page is a tribute to the dedicated and creative individuals
         who have been part of our educational journey, demonstrating their
