@@ -520,6 +520,20 @@
       </div>
 
       YBANEZ, RED<br />
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let teamMembers = document.querySelectorAll('.team-member');
+      let currentIndex = 0;
+
+      function swapTeamMembers() {
+        teamMembers[currentIndex].style.order = (currentIndex + 1) % teamMembers.length;
+        currentIndex = (currentIndex + 1) % teamMembers.length;
+      }
+
+      setInterval(swapTeamMembers, 5000);
+    });
+  </script>
+
     </div>
   </body>
 </html>
